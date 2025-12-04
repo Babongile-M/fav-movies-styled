@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Landing-page */
+
+#title{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom right, #3E4B54 0%, #f8f9fa 80%);
+}
+
+#title h1{
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(253, 253, 255);
+    padding: 25vh 0 0 30vh;
+}
+
+/* Movie Grid */
+.movieGrid {
+    background-color: #ffffff;
+    margin: 60px 100px;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    overflow: hidden; 
+    align-items: center;
+    justify-content: center;
+}
+
+.two {
+    flex-direction: row-reverse;
+}
+
+.img-wrapper {
+    width: 24%;
+    height: 74%;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 0 0 20px;
+}
+
+.one .img-wrapper{
+    background-color: rgb(220, 196, 63);
+}
+
+.two .img-wrapper{
+    background-color: rgb(162, 162, 116);
+}
+
+.three .img-wrapper{
+    background-color: rgb(59, 59, 141);
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.movieGrid:hover .img-wrapper img {
+    transform: scale(1.05);
+}
+.content {
+    width: 50%;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h3 {
+    margin: 0 0 25px 0;
+    font-size: 36px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    color: #222;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+    color: #444;
+}
+
+.content p em {
+    font-family: cursive;
+    color: #666;
+}
+
+.content p b {
+    color: #4e4c4c;
+    font-family: cursive;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.content a {
+    text-decoration: none;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    padding: 14px 30px;
+    transition: all 0.3s ease;
+}
+
+/* Goosebumps Links */
+#gtrailer {
+    color: rgb(220, 196, 63);
+    border-color: rgb(220, 196, 63);
+    background-color: transparent;
+}
+
+#gtrailer:hover {
+    background-color: rgb(220, 196, 63);
+    color: white;
+    transform: scale(1.05);
+}
+
+#glink {
+    color: rgb(79, 79, 140);
+    border-color: rgb(79, 79, 140);
+    background-color: transparent;
+}
+
+#glink:hover {
+    background-color: rgb(79, 79, 140);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* The Boy Who Harnessed The Wind Links */
+#btrailer {
+    color: rgb(162, 162, 116);
+    border-color: rgb(162, 162, 116);
+    background-color: transparent;
+}
+
+#btrailer:hover {
+    background-color: rgb(162, 162, 116);
+    color: white;
+    transform: scale(1.05);
+}
+
+#blink {
+    color: rgb(135, 172, 184);
+    border-color: rgb(135, 172, 184);
+    background-color: transparent;
+}
+
+#blink:hover {
+    background-color: rgb(135, 172, 184);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Bad Genius Links */
+#bgtrailer {
+    color: rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0);
+    background-color: transparent;
+}
+
+#bgtrailer:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    transform: scale(1.05);
+}
+
+#bglink {
+    color: rgb(59, 59, 141);
+    border-color: rgb(59, 59, 141);
+    background-color: transparent;
+}
+
+#bglink:hover {
+    background-color: rgb(59, 59, 141);
+    color: white;
+    transform: scale(1.05);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 80px 100px;
+}
